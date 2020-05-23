@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    
+    <h1>Wheather Api</h1>
+    <div>
+        <a href="/">home</a> |
+        <a href="/logs/">logs</a> |
+    </div>
+
+    <!-- displaying coordinate from geo -->
+    
+    <p>
+        The weather at <span id="lat"></span>&deg;,<span id="lng"></span>&deg; has <span id="summary">[summary]</span> 
+        with a Temperature of <span id="temperature">00.00</span>&deg;C.
+        The Concentration of particulate matter (<span id="aq_parameter">____</span>)
+        is <span id="aq_value">[value]</span> <span id="aq_unit">_____</span>. <br>
+        <span class="updatedDate">updated: <span id="aq_date" >[date]</span></span> 
+   </p>
+    
+    <script src="main.js"></script>
+
+</body>
+
+</html>

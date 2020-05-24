@@ -4,7 +4,8 @@ const DatatStore = require('nedb');
 const fetch = require('node-fetch');
 
 const app = express();
-app.listen(3000, () => console.log('listening'));
+const port = process.env.PORT || 3000;
+app.listen(3000, () => console.log(`listening on port ${port}`));
 app.use(express.static('public'));
 app.use(express.json({limit:'1mb'}));
 
@@ -37,7 +38,6 @@ app.get('/weather/:latlon',async (request,response)=>{
     console.log(lat,lng);
 
     //open map api request 
-    console.log(process.env)
     const api_key = process.env.API_KEY;
     const ow_url = `http://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lng}&appid=${api_key}`;
     const ow_response = await fetch(ow_url);

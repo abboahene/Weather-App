@@ -3,6 +3,15 @@
     --disabled: rgba(0,0,0,0.4);
 }
 
+body{
+    display: table;
+    width: 417px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: auto;
+    vertical-align: middle;
+}
+
 p{
     padding: 10px;
     background-color: rgb(1, 240, 180);
@@ -28,3 +37,10 @@ button:hover{
     color:var(--disabled);
 }
 
+
+/* style for checks */
+
+#map{
+    box-shadow: var(--sh);
+    height: 180px;
+}

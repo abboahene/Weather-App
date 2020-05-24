@@ -4,12 +4,10 @@
 }
 
 body{
-    display: table;
-    width: 417px;
     margin-right: auto;
     margin-left: auto;
     margin-top: auto;
-    vertical-align: middle;
+
 }
 
 p{
